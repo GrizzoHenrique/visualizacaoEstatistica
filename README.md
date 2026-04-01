@@ -1,38 +1,32 @@
 # visualizacaoEstatistica
 
-Projeto: Fundamentos da Descoberta de Dados (Módulo 13)
-Este projeto faz parte do curso de Ciência de Dados e tem como foco a aplicação de conceitos estatísticos e visualização de dados em um cenário real de varejo.
+**Este Exercício tem como principal objetivo praticar os conceitos estatistico aprendidos em aula como média, mediana e desvio padrão em uma base de dados de um supermercado no chile**
 
-📋 Visão Geral
-O objetivo principal deste projeto é explorar e analisar uma base de dados de produtos de um supermercado no Chile. Através da análise exploratória, buscamos entender o comportamento dos preços, identificar padrões de descontos e aplicar medidas de tendência central e dispersão para extrair insights valiosos sobre as categorias de produtos.
+## Dados Utilizados
+**A base de dados contém as seguintes informações:**
 
-📊 Dados Utilizados
-A base de dados contém as seguintes informações:
+* title: Nome do produto.
 
-title: Nome do produto.
+* Marca: Marca do fabricante.
 
-Marca: Marca do fabricante.
+* Preco_Normal: Preço base do produto sem descontos.
 
-Preco_Normal: Preço base do produto sem descontos.
+* Preco_Desconto: Preço final após aplicação de ofertas.
 
-Preco_Desconto: Preço final após aplicação de ofertas.
+* Preco_Anterior: Preço de referência antes da promoção.
 
-Preco_Anterior: Preço de referência antes da promoção.
+* Desconto: Valor total do desconto aplicado.
 
-Desconto: Valor total do desconto aplicado.
+* Categoria: Categoria do produto (em espanhol).
 
-Categoria: Categoria do produto (em espanhol).
+## Tecnologias Utilizadas
 
-🛠️ Tecnologias e Bibliotecas
-As seguintes ferramentas foram utilizadas no desenvolvimento deste projeto:
-
-Python 3
-
-Pandas: Manipulação e tratamento de dados.
-
-Matplotlib: Criação de gráficos estáticos.
-
-Plotly Express: Visualizações interativas e dinâmicas.
+| Tecnologia | Versão | Propósito |
+|-----------|--------|----------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | 3.7+ | Linguagem principal |
+| ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) | Latest | Manipulação de dados |
+| ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white) | Latest | Visualizações |
+| ![Jupyter](https://img.shields.io/badge/Jupyter-F37726?logo=jupyter&logoColor=white) | Latest | Ambiente interativo |
 
 🔍 Principais Análises Realizadas
 1. Estatísticas por Categoria
@@ -50,14 +44,22 @@ Identificou-se que em categorias com alto desvio, como lacteos, a média sofre f
 3. Visualização com Boxplots
 Utilização de gráficos de caixa (Boxplot) para visualizar a distribuição dos dados e identificar visualmente a presença de outliers nas categorias mais críticas.
 
-🚀 Como executar o projeto
-Clone este repositório.
+##  Como Executar
 
-Certifique-se de ter as bibliotecas instaladas:
+### Pré-requisitos
+- Python 3.7+
+- pip ou conda
 
-Bash
+### Instalação
 
-pip install pandas matplotlib plotly
-Abra o arquivo Profissao Cientista de Dados M13 Projeto.ipynb em um ambiente Jupyter ou Google Colab.
+```bash
+# Clone o repositório
+git clone https://github.com/GrizzoHenrique/visualizacaoEstatistica.git
+cd visualizacaoEstatistica
 
-Certifique-se de que o arquivo CSV da base de dados está no mesmo diretório.
+# Crie um ambiente virtual (recomendado)
+python -m venv venv
+source venv/bin/activate  # No Windows: venv\Scripts\activate
+
+# Instale as dependências
+pip install -r requirements.txt
